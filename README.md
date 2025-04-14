@@ -7,121 +7,128 @@ Developed an NLP and ML-based framework to analyze Reddit discussions on hormona
 
 This project leverages web mining, Natural Language Processing (NLP), and Machine Learning (ML) to explore emotional and psychological experiences shared by women coping with Polycystic Ovary Syndrome (PCOS) and thyroid disorders. By extracting and analyzing real-world data from platforms like Reddit and medical websites, the project uncovers sentiment patterns, emotion trends, and offers evidence-based support recommendations.
 
-Problem Statement
+## Problem Statement
 
 Millions of women globally are affected by hormonal conditions such as PCOS and thyroid imbalances, which impact both their physical and emotional well-being. While traditional medical support addresses physiological symptoms, emotional struggles often remain underrepresented. This project addresses this gap by using AI to understand and support the mental health challenges tied to these conditions.
 
-Objectives
+## Objectives
 
--> Extract user-generated content related to PCOS and thyroid disorders from Reddit.
+- Extract user-generated content related to PCOS and thyroid disorders from Reddit.
 
--> Scrape professional health websites for medically reviewed remedies.
+- Scrape professional health websites for medically reviewed remedies.
 
--> Perform sentiment and emotion analysis using VADER and DistilRoBERTa.
+- Perform sentiment and emotion analysis using VADER and DistilRoBERTa.
 
--> Correlate emotional states with evidence-based remedies.
+- Correlate emotional states with evidence-based remedies.
 
--> Evaluate classification accuracy of ML models like Logistic Regression, SVC, and XGBoost.
+- Evaluate classification accuracy of ML models like Logistic Regression, SVC, and XGBoost.
 
-Data Sources
+## Data Sources
 
-Reddit:-
+### Reddit
 
--> Subreddits: r/PCOS, r/thyroidhealth
+- Subreddits: r/PCOS, r/thyroidhealth
 
--> Data: Titles, self-text, comments, upvotes
+- Data: Titles, self-text, comments, upvotes
 
--> Extraction Tool: PRAW (Python Reddit API Wrapper)
+- Extraction Tool: PRAW (Python Reddit API Wrapper)
 
-Trusted Medical Websites:-
+### Trusted Medical Websites
 
--> Mayo Clinic, Healthline, WebMD
+- Mayo Clinic, Healthline, WebMD
 
--> Data: Symptoms, causes, treatments, emotional coping mechanisms
+- Data: Symptoms, causes, treatments, emotional coping mechanisms
 
--> Extraction Tool: BeautifulSoup
+- Extraction Tool: BeautifulSoup
 
-Methodology
+## Methodology
 
-Data Preprocessing
+### Data Preprocessing
 
--> Cleaning text: removing punctuation, special characters, URLs
+- Cleaning text: removing punctuation, special characters, URLs
 
--> Normalization: lowercasing, tokenization
+- Normalization: lowercasing, tokenization
 
--> Handling missing values
+- Handling missing values
 
-Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 
--> Summary statistics for upvotes and comments
+- Summary statistics for upvotes and comments
 
--> Word frequency and text length distribution
+- Word frequency and text length distribution
 
--> Sentiment and emotion trends visualization
+- Sentiment and emotion trends visualization
 
--> Outlier detection and text similarity analysis
+- Outlier detection and text similarity analysis
 
-Sentiment Analysis
+### Sentiment Analysis
 
--> Tool: VADER (NLTK)
+- Tool: VADER (NLTK)
 
--> Sentiment categories: Positive, Negative, Neutral
+- Sentiment categories: Positive, Negative, Neutral
 
--> PCOS: 45% Negative, 40% Positive
+- PCOS: 45% Negative, 40% Positive
 
--> Thyroid: 50% Negative, 35% Positive
+- Thyroid: 50% Negative, 35% Positive
 
-Emotion Detection
-Model: DistilRoBERTa (j-hartmann/emotion-english-distilroberta-base)
+### Emotion Detection
 
-Emotion labels: Joy, Sadness, Anger, Fear, Disgust, Surprise
+- Model: DistilRoBERTa (j-hartmann/emotion-english-distilroberta-base)
 
-Dominant emotions: Sadness and Anger
+- Emotion labels: Joy, Sadness, Anger, Fear, Disgust, Surprise
 
-Remedy Recommendation
-Emotion-to-remedy mapping (e.g., sadness → therapy, exercise)
+- Dominant emotions: Sadness and Anger
 
-Extracted recommendations from scraped medical sources
+### Remedy Recommendation
 
-Combined emotion detection with context-specific advice
+- Emotion-to-remedy mapping (e.g., sadness → therapy, exercise)
 
-Machine Learning Models
-Logistic Regression: Baseline, 85% accuracy
+- Extracted recommendations from scraped medical sources
 
-Support Vector Classifier (SVC): Best performance, 86% accuracy
+- Combined emotion detection with context-specific advice
 
-XGBoost: High precision on majority classes, 76% accuracy
+### Machine Learning Models
 
-Data balancing: SMOTE applied to address class imbalance
+- Logistic Regression: Baseline, 85% accuracy
 
-Technologies Used
-Python
+- Support Vector Classifier (SVC): Best performance, 86% accuracy
 
-PRAW, BeautifulSoup
+- XGBoost: High precision on majority classes, 76% accuracy
 
-NLTK, Hugging Face Transformers
+- Data balancing: SMOTE applied to address class imbalance
 
-Scikit-learn, XGBoost
+## Technologies Used
 
-Matplotlib, Seaborn
+- Python
 
-Pandas, NumPy
+- PRAW, BeautifulSoup
 
-Key Outcomes
-Uncovered prevalent emotions such as sadness and anger in discussions related to PCOS and thyroid conditions.
+- NLTK, Hugging Face Transformers
 
-Mapped emotional states to tailored, medically accurate remedies.
+- Scikit-learn, XGBoost
 
-Identified SVC as the most reliable classifier for emotion detection with 86% accuracy.
+- Matplotlib, Seaborn
 
-Developed a holistic analysis pipeline integrating social media content with clinical health advice.
+- Pandas, NumPy
 
-Conclusion
+## Key Outcomes
+
+- Uncovered prevalent emotions such as sadness and anger in discussions related to PCOS and thyroid conditions.
+
+- Mapped emotional states to tailored, medically accurate remedies.
+
+- Identified SVC as the most reliable classifier for emotion detection with 86% accuracy.
+
+- Developed a holistic analysis pipeline integrating social media content with clinical health advice.
+
+## Conclusion
+
 This project presents a novel approach to understanding and supporting women’s hormonal health by combining NLP and ML techniques with real-world and professional data. The insights derived can help healthcare providers and support systems offer more empathetic, personalized care. Future enhancements could include deep learning models, larger datasets, and clinical decision support integration.
 
-Contributors
-Gahana Nagaraja
+## Authors
 
-Namratha Nagathihalli Anantha
+1. Gahana Nagaraja
 
-Vaishnavi Rajendra Dhotargavi
+2. Namratha Nagathihalli Anantha
+
+3. Vaishnavi Rajendra Dhotargavi
