@@ -3,7 +3,7 @@ A Web-Based Analysis of Women Hormonal Health Challenges using Data Mining and N
 
 Developed an NLP and ML-based framework to analyze Reddit discussions on hormonal health, applying sentiment analysis, LLMs, and recommendation systems for evidence-based insights.
 
-Project Overview
+## Project Overview
 
 This project leverages web mining, Natural Language Processing (NLP), and Machine Learning (ML) to explore emotional and psychological experiences shared by women coping with Polycystic Ovary Syndrome (PCOS) and thyroid disorders. By extracting and analyzing real-world data from platforms like Reddit and medical websites, the project uncovers sentiment patterns, emotion trends, and offers evidence-based support recommendations.
 
